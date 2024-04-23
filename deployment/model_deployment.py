@@ -27,9 +27,10 @@ with open('model_test.joblib', 'rb') as model_file:
 def predict():
     # Get the data from the POST request.
     data_json = request.get_json()
+    data = data_json['data']
 
     # Make prediction using model loaded from disk as per the data.
-    input_data = pd.DataFrame(data_json)
+    input_data = pd.DataFrame(data)
     input_data[["y", "lag1", "lag2"]] = pd.DataFrame(input_data["values"].tolist(), index= input_data.index)
     input_data = input_data.drop(columns="values")
     preds_df = pd.DataFrame(pipeline.predict(input_data), index=input_data.index, columns=["lead1", "lead2"])
