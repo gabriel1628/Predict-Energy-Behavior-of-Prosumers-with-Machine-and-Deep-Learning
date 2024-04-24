@@ -1,4 +1,5 @@
 # Import libraries
+import json
 from io import StringIO
 
 import joblib
@@ -7,8 +8,9 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
+
 # to drop 'unique_id' and 'ds' columns from X when using fit and predict
-class columnDropperTransformer():
+class columnDropperTransformer:
     def __init__(self, columns):
         self.columns = columns
 
@@ -17,32 +19,37 @@ class columnDropperTransformer():
 
     def fit(self, X, y=None):
         return self
-    
+
 
 # Load the model
-with open('model_test.joblib', 'rb') as model_file:
+with open("model_test.joblib", "rb") as model_file:
     pipeline = joblib.load(model_file)
 
-@app.route('/',methods=['POST'])
+
+@app.route("/", methods=["POST"])
 def predict():
     # Get the data from the POST request.
     data_json = request.get_json()
-    data = data_json['data']
+    data = data_json["data"]
+
+    # Put the data in a dataframe and create features
+    input_data = pd.DataFrame(data)
+    input_data[["y", "lag1", "lag2"]] = pd.DataFrame(
+        input_data["values"].tolist(), index=input_data.index
+    )
+    input_data = input_data.drop(columns="values")
 
     # Make prediction using model loaded from disk as per the data.
-    input_data = pd.DataFrame(data)
-    input_data[["y", "lag1", "lag2"]] = pd.DataFrame(input_data["values"].tolist(), index= input_data.index)
-    input_data = input_data.drop(columns="values")
-    preds_df = pd.DataFrame(pipeline.predict(input_data), index=input_data.index, columns=["lead1", "lead2"])
-    predictions = pd.concat(
-        [input_data.iloc[:, :2], preds_df],
-        axis=1
+    preds_df = pd.DataFrame(
+        pipeline.predict(input_data), index=input_data.index, columns=["lead1", "lead2"]
     )
-
-    output = predictions.to_json(orient="records", indent=4)
+    predictions = pd.concat([input_data.iloc[:, :2], preds_df], axis=1)
+    # Reformat predictions in json
+    predictions_json = predictions.to_json(orient="records", indent=4)
+    output = json.dumps({"prediction": json.loads(predictions_json)}, indent=4)
 
     return jsonify(output)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5000, debug=True)
