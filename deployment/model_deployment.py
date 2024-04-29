@@ -8,19 +8,6 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-
-# to drop 'unique_id' and 'ds' columns from X when using fit and predict
-class columnDropperTransformer:
-    def __init__(self, columns):
-        self.columns = columns
-
-    def transform(self, X, y=None):
-        return X.drop(self.columns, axis=1)
-
-    def fit(self, X, y=None):
-        return self
-
-
 # Load the model
 with open("model_test.joblib", "rb") as model_file:
     pipeline = joblib.load(model_file)
