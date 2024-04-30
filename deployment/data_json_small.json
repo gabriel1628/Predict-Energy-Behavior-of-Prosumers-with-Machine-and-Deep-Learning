@@ -1,9 +1,9 @@
 {
     "data": [
         {
-            "unique_id": 26,
-            "ds": "2023-03-28 02:00:00",
-            "values": [
+            "building_id": 26,
+            "datetime": "2023-03-28 02:00:00",
+            "consumption_values": [
                 4.917,
                 4.212,
                 5.137
