@@ -13,7 +13,12 @@ with open("model_test.joblib", "rb") as model_file:
     pipeline = joblib.load(model_file)
 
 
-@app.route("/", methods=["POST"])
+@app.route("/", methods=["GET"])
+def home_endpoint():
+    return "Welcome to the homepage ! To get your energy forecasts, send your data to the /predict endpoint"
+
+
+@app.route("/predict", methods=["POST"])
 def predict():
     # Get the data from the POST request.
     data_json = request.get_json()
