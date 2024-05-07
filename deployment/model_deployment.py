@@ -18,7 +18,12 @@ def home_endpoint():
     return "Welcome to the homepage ! To get your energy forecasts, send your data to the /predict endpoint"
 
 
-@app.route("/predict", methods=["POST"])
+@app.route("/api/predict", methods=["GET"])
+def predict_endpoint():
+    return jsonify({"connection": "OK"})
+
+
+@app.route("/api/predict", methods=["POST"])
 def predict():
     # Get the data from the POST request.
     data_json = request.get_json()
