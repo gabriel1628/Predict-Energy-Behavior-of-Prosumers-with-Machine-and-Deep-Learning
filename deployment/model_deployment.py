@@ -1,6 +1,5 @@
 # Import libraries
 import json
-from io import StringIO
 
 import joblib
 import pandas as pd

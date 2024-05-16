@@ -1,0 +1,349 @@
+{
+    "data": [
+        {
+            "building_id": 68,
+            "datetime": "2022-11-10 01:00:00",
+            "consumption": 28.02
+        },
+        {
+            "building_id": 47,
+            "datetime": "2022-11-15 01:00:00",
+            "consumption": 10.453
+        },
+        {
+            "building_id": 41,
+            "datetime": "2023-01-03 01:00:00",
+            "consumption": 20.887
+        },
+        {
+            "building_id": 26,
+            "datetime": "2023-01-16 01:00:00",
+            "consumption": 3.123
+        },
+        {
+            "building_id": 44,
+            "datetime": "2023-03-14 01:00:00",
+            "consumption": 3.18
+        },
+        {
+            "building_id": 0,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 925.559
+        },
+        {
+            "building_id": 1,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 13.481
+        },
+        {
+            "building_id": 2,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 2315.619
+        },
+        {
+            "building_id": 3,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 675.435
+        },
+        {
+            "building_id": 4,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 1021.218
+        },
+        {
+            "building_id": 61,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 84.443
+        },
+        {
+            "building_id": 5,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 7229.103
+        },
+        {
+            "building_id": 6,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 30.116
+        },
+        {
+            "building_id": 7,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 72.319
+        },
+        {
+            "building_id": 8,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 112.4
+        },
+        {
+            "building_id": 62,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 53.388
+        },
+        {
+            "building_id": 9,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 101.992
+        },
+        {
+            "building_id": 65,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 70.807
+        },
+        {
+            "building_id": 10,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 506.928
+        },
+        {
+            "building_id": 11,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 60.231
+        },
+        {
+            "building_id": 12,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 193.902
+        },
+        {
+            "building_id": 13,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 33.878
+        },
+        {
+            "building_id": 14,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 1002.352
+        },
+        {
+            "building_id": 15,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 40.646
+        },
+        {
+            "building_id": 16,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 100.177
+        },
+        {
+            "building_id": 17,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 276.033
+        },
+        {
+            "building_id": 66,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 74.476
+        },
+        {
+            "building_id": 18,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 714.022
+        },
+        {
+            "building_id": 19,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 92.734
+        },
+        {
+            "building_id": 20,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 275.286
+        },
+        {
+            "building_id": 21,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 145.583
+        },
+        {
+            "building_id": 22,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 144.103
+        },
+        {
+            "building_id": 23,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 1581.291
+        },
+        {
+            "building_id": 24,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 131.083
+        },
+        {
+            "building_id": 25,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 170.031
+        },
+        {
+            "building_id": 27,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 425.735
+        },
+        {
+            "building_id": 28,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 309.647
+        },
+        {
+            "building_id": 29,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 322.14
+        },
+        {
+            "building_id": 30,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 684.096
+        },
+        {
+            "building_id": 31,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 43.437
+        },
+        {
+            "building_id": 32,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 108.367
+        },
+        {
+            "building_id": 33,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 437.848
+        },
+        {
+            "building_id": 34,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 87.401
+        },
+        {
+            "building_id": 35,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 259.657
+        },
+        {
+            "building_id": 36,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 73.81
+        },
+        {
+            "building_id": 37,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 315.47
+        },
+        {
+            "building_id": 38,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 72.641
+        },
+        {
+            "building_id": 39,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 269.704
+        },
+        {
+            "building_id": 40,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 110.975
+        },
+        {
+            "building_id": 42,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 869.638
+        },
+        {
+            "building_id": 43,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 275.924
+        },
+        {
+            "building_id": 45,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 1003.378
+        },
+        {
+            "building_id": 67,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 379.091
+        },
+        {
+            "building_id": 46,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 314.374
+        },
+        {
+            "building_id": 48,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 3861.033
+        },
+        {
+            "building_id": 49,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 512.069
+        },
+        {
+            "building_id": 50,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 20.726
+        },
+        {
+            "building_id": 51,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 123.843
+        },
+        {
+            "building_id": 63,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 56.765
+        },
+        {
+            "building_id": 52,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 299.694
+        },
+        {
+            "building_id": 53,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 60.105
+        },
+        {
+            "building_id": 54,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 326.989
+        },
+        {
+            "building_id": 55,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 108.183
+        },
+        {
+            "building_id": 56,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 859.272
+        },
+        {
+            "building_id": 57,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 72.128
+        },
+        {
+            "building_id": 58,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 154.896
+        },
+        {
+            "building_id": 64,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 208.882
+        },
+        {
+            "building_id": 59,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 73.703
+        },
+        {
+            "building_id": 60,
+            "datetime": "2023-04-02 01:00:00",
+            "consumption": 230.022
+        }
+    ]
+}
