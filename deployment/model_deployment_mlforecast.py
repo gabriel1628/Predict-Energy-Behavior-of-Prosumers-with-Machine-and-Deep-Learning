@@ -38,17 +38,28 @@ def predict():
     predictions = model.predict(24)
     output = []
     for building_id in predictions["building_id"].unique():
-        output.append(
-            {
-                "building_id": int(building_id),
-                "datetime": datetimes.loc[
-                    datetimes["building_id"] == building_id, "datetime"
-                ].values[0],
-                "forecasts": predictions.loc[
-                    predictions["building_id"] == 0, "model"
-                ].to_list(),
-            }
-        )
+        try:
+            output.append(
+                {
+                    "building_id": int(building_id),
+                    "datetime": datetimes.loc[
+                        datetimes["building_id"] == building_id, "datetime"
+                    ].values[0],
+                    "forecasts": predictions.loc[
+                        predictions["building_id"] == building_id, "model"
+                    ].to_list(),
+                }
+            )
+        except:
+            output.append(
+                {
+                    "building_id": int(building_id),
+                    "datetime": None,
+                    "forecasts": predictions.loc[
+                        predictions["building_id"] == building_id, "model"
+                    ].to_list(),
+                }
+            )
     output = {"predictions": output}
     output = json.dumps(output, indent=4)
 
